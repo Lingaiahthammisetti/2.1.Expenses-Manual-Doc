@@ -28,7 +28,8 @@ That's all
 
 
 
-Verification
+Verification:
+
 We can check data by using client package called mysql.
 
 Usually command to connect mysql server is
