@@ -5,8 +5,10 @@ Backend service is responsible for adding the given values to database. Backend 
 
 Install NodeJS, By default NodeJS 16 is available, We would like to enable 20 version and install this.
 
-**You can list modules by using dnf module list**
-
+**You can list modules by using "dnf module list"**
+```
+dnf module list
+```
 ```
 dnf module disable nodejs -y
 ```
@@ -83,7 +85,7 @@ WantedBy=multi-user.target
 
 **NOTE: Ensure you replace <MYSQL-SERVER-IPADDRESS> with IP address**
 
-Load the service.
+Load the service - Reload systemd configuration files changes using 'systemctl daemon-reload'.
 
 ```
 systemctl daemon-reload
@@ -107,7 +109,7 @@ To have it installed we can use
 dnf install mysql -y
 ```
 
-Load Schema
+Load database Schema
 
 ```
 mysql -h db.lingaiah.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
