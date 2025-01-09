@@ -49,6 +49,8 @@ Once you got mysql prompt, you can use below command to check schemas/databases 
 ```
 show databases;
 ```
+
+First load the backend.sql schema and run the below commands.
 Once you are in particular schema, you can get the list of tables.
 ```
 show tables;
